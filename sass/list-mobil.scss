@@ -1,0 +1,24 @@
+.list-mobil {
+    .imgs {
+        width: 100%;
+        height: fit-content;
+        // height: 320px;
+        // border: 1px solid;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    .cardx {
+        margin-bottom: 32px;
+    }
+    .fasilitas {
+        margin-top: 8px;
+        h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    }
+}

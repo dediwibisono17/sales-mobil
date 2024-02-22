@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display&family=Libre+Baskerville&family=Montserrat:wght@400;500;700&family=Oxanium&family=Bebas+Neue&family=Kanit:wght@400;600&display=swap');
+
+@font-face{
+  font-family: "sambung";
+  src: url('sambung.woff2');
+  src: local('sambung');
+//   src: url('sambung.svg#sambung') format('woff2');
+  src: url('sambung.woff2') format('woff2');
+}
+
+$darkblue: #111;
+$yellow:#d8ba72;
+$blue: #31a9e3;
+$hijau: #7e8446;
+$merah: #e11429;
+$kuning: #FFDA6B;
+
+.bar {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: white;
+}

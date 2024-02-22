@@ -1,0 +1,182 @@
+.slick {
+    &-slide {
+        margin: 0 16px;
+    }
+    &-list {
+        margin: 0 -16px;
+    }
+    &-next,
+    &-prev {
+        // border: 2px solid rgba(255, 255, 255, 0.5);
+        width: 42px;
+        background: rgba($merah, .6);
+        // backdrop-filter: blur(2px);
+        height: 42px;
+        transition: .3s;
+        // border-radius: 50%;
+        @media screen and (max-width:766px) {
+            top: 90%;
+            width: 32px;
+            height: 32px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            background: rgba($kuning, .2);
+        }
+        &::before {
+            font-family: "FontAwesome";
+            z-index: 99;
+            // color: rgba($color: #000000, $alpha: 0.8);
+            color: white;
+        }
+    }
+    &-next {
+        right: -8px;
+        // left: 0;
+        // left: -15%;
+        z-index: 9;
+        // transform: translate(-100%, 0%);
+        &::before {
+            content: "\f054";
+        }
+    }
+    &-prev {
+        // left: -20%;
+        left: -8px;
+        z-index: 9;
+        // transform: translate(-100%, 0%);
+        @media screen and (max-width:766px) {
+            left: 80%;
+        }
+        &::before {
+            content: "\f053";
+        }
+    }
+    &-dots {
+        li {
+            button {
+                &::before {
+                    // color: #fff;
+                    font-size: 39px;
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    // background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+section {
+    position: relative;
+    padding: 32px 0 32px;
+    // background: $darkblue;
+    // color: white;
+    min-height: 100vh;
+    z-index: 8;
+    h1,h2 {
+        // font-family: 'DM Serif Display', sans-serif;
+        font-family: 'Montserrat';
+        font-weight: 700;
+    }
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: clip;
+    // padding-bottom: 100vh;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+.totop {
+    position: relative;
+    z-index: 70;
+}
+
+footer {
+    background: $merah;
+    border-top: 3px solid $kuning;
+    padding: 0;
+    color: white;
+    .pad {
+        padding: 16px;
+    }
+    .border-top {
+        padding: 0;
+        background: #af0a1b;
+        border-top: 1px solid #af0a1b;
+    }
+    a {
+        color: white;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+    }
+    font-family: 'Montserrat';
+    h2 {
+        font-size: 1.5rem;
+        color: $kuning;
+        font-family: 'Bebas Neue';
+        // font-weight: bold;
+    } 
+}
+
+.seperator{
+    span {
+        width: 90%;
+        position: relative;
+        background-color: #a58251;
+        display: inline-block;
+        height: 1px;
+        vertical-align: top;
+        @keyframes dash {
+            100% {
+                background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+            }
+        } 
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -5px;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #a58251 50%, transparent 50%), linear-gradient(90deg, #a58251 50%, transparent 50%), linear-gradient(0deg, #a58251 50%, transparent 50%), linear-gradient(0deg, #a58251 50%, transparent 50%);
+            background-size: 8px 1px, 0px 1px, 0px 1px, 0px 1px;
+            background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+            animation: dash 50s linear infinite;
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+.aboutme {
+    min-height: auto;
+    .imgs {
+        width: 100%;
+        height: 320px;
+        position: relative;
+        .namax {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            padding: 8px;
+            background: linear-gradient(to top, black, black);
+            color: white;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    table {
+        td{
+            &:first-child {
+                font-weight: bold;
+            }
+        }
+    }
+}

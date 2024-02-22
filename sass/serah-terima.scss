@@ -1,0 +1,34 @@
+.serah-terima {
+    min-height: auto;
+    .foto {
+        width: 100%;
+        height: 320px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        // border: 3px solid white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        position: relative;
+        .tanggal {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 16px;
+            height: auto;
+            width: 100%;
+            color: white;
+            .dates {
+                font-size: .8rem;
+                color: yellow;
+            }
+            background: linear-gradient(to top,black,rgba(black,.3));
+            border-radius: 0 0 16px 16px;
+        }
+        img {
+            width: 100%;
+            border-radius: 16px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
