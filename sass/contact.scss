@@ -19,16 +19,24 @@
     .data-contact {
         text-align: center;
         // font-weight: bold;
-        color: #242222;
+        color: #000;
         @media screen and (max-width:768px) {
             text-align: left;
+        }
+        .col-md-4{
+            @media screen and (max-width:768px) {
+                margin-bottom: 8px;
+            }
         }
         .font-title {
             font-size: 1.3rem;
             color: $merah;
             @media screen and (max-width:768px) {
-                margin-bottom: 16px;
+                margin-bottom: 0px;
             }
         }
+    }
+    a {
+        color: $merah;
     }
 }
