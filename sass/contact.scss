@@ -1,0 +1,34 @@
+.contact {
+    padding: 72px 0 32px;
+    .image {
+        width: 100%;
+        margin-bottom: 24px;
+        height: 360px;
+        border-radius: 16px;
+        @media screen and (max-width:768px) {
+            height: fit-content;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 16px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .data-contact {
+        text-align: center;
+        // font-weight: bold;
+        color: #242222;
+        @media screen and (max-width:768px) {
+            text-align: left;
+        }
+        .font-title {
+            font-size: 1.3rem;
+            color: $merah;
+            @media screen and (max-width:768px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
